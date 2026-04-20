@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bob-a-thon Workshop - bob-lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="narrative.css">
+</head>
+<body>
+  <!-- Shared Navigation Component -->
+  <div data-component="navbar"></div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Bob-a-thon: Enterprise AI Development Workshop</h1>
+      <p class="page-subtitle">Learn how IBM Bob transforms enterprise development from weeks to minutes</p>
+      <p class="page-description">A hands-on workshop with real code, real compliance, and measurable results.</p>
+    </div>
+  </header>
+
+  <main class="walkthrough-container">
+    <!-- Sidebar Navigation -->
+    <aside class="walkthrough-sidebar">
+      <div class="sidebar-header">
+        <h3>Workshop Guide</h3>
+      </div>
+      <nav class="capability-nav">
+        <a href="#overview" class="capability-link active">Overview</a>
+        <a href="#quickstart" class="capability-link">Quick Start</a>
+        <a href="#journey" class="capability-link">Workshop Journey</a>
+        <a href="#outcomes" class="capability-link">Expected Outcomes</a>
+        <a href="#metrics" class="capability-link">Success Metrics</a>
+        <a href="#learning" class="capability-link">Learning Paths</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.ibm.com/Subramaniam-J/seller_deep_dive" target="_blank" class="sidebar-github-link">
+          <span class="github-text">Start Workshop</span>
+          <span class="github-arrow">&rarr;</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="walkthrough-main">
+      <!-- Overview Section -->
+      <section id="overview" class="section">
+        <div class="container">
+          <div class="info-card compliance">
+            <h2>What is Bob-a-thon?</h2>
+            <p>Bob-a-thon is a hands-on workshop that demonstrates IBM Bob's enterprise capabilities through a realistic scenario: implementing SSO + MFA across 3 legacy systems to pass a SOC 2 audit. Experience firsthand how Bob transforms 7-8 weeks of traditional development into 10 minutes of AI-powered orchestration.</p>
+
+            <div class="capabilities-overview">
+              <div class="cap-card">
+                <h4>⏱️ Time Required</h4>
+                <p>45-60 minutes (self-paced)</p>
+              </div>
+              <div class="cap-card">
+                <h4>🎯 Format</h4>
+                <p>Hands-on, step-by-step guided experience</p>
+              </div>
+              <div class="cap-card">
+                <h4>📊 Level</h4>
+                <p>Beginner to Advanced (all welcome)</p>
+              </div>
+            </div>
+
+            <h3>Learning Objectives</h3>
+            <ul>
+              <li>Understand how Bob reads and interprets business requirements documents</li>
+              <li>Experience multi-repository orchestration across different tech stacks</li>
+              <li>See compliance automation in action (SOC 2, PCI-DSS)</li>
+              <li>Witness security vulnerabilities caught and fixed inline</li>
+              <li>Learn deployment planning with zero-downtime strategies</li>
+              <li>Explore Bobalytics for cost transparency and productivity tracking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Start Section -->
+      <section id="quickstart" class="section section-alt">
+        <div class="container">
+          <div class="capability-header">
+            <span class="capability-number">1</span>
+            <h2>Quick Start Guide</h2>
+          </div>
+
+          <div class="capability-content">
+            <div class="objective-box">
+              <h3>Prerequisites</h3>
+              <ul>
+                <li>Access to IBM Bob (request via IBM Client Engineering)</li>
+                <li>Basic understanding of enterprise development concepts</li>
+                <li>Familiarity with Git and multi-repository workflows (helpful but not required)</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>Setup Steps</h3>
+              <ol>
+                <li>
+                  <strong>Clone the Workshop Repository</strong>
+                  <p>Access the seller_deep_dive repository containing all workshop materials</p>
+                  <div class="code-block">
+                    <pre><code>git clone https://github.ibm.com/Subramaniam-J/seller_deep_dive.git
+cd seller_deep_dive</code></pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Review the README</strong>
+                  <p>Familiarize yourself with the workshop structure and objectives</p>
+                </li>
+                <li>
+                  <strong>Open Bob</strong>
+                  <p>Launch IBM Bob in your preferred IDE or web interface</p>
+                </li>
+                <li>
+                  <strong>Follow the Stage-by-Stage Guide</strong>
+                  <p>Work through each stage at your own pace, from Stage 0 to Stage 9</p>
+                </li>
+              </ol>
+            </div>
+
+            <div class="info-card">
+              <h3>Workshop Materials</h3>
+              <p>The repository includes:</p>
+              <ul>
+                <li>Business requirements document (UseCase1_SSO_MFA_Integration.pdf)</li>
+                <li>Existing codebase across 3 repositories (Java, Node.js, React)</li>
+                <li>SOC 2 audit findings document</li>
+                <li>Step-by-step prompts for Bob</li>
+                <li>Expected outputs and validation criteria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workshop Journey Section -->
+      <section id="journey" class="section">
+        <div class="container">
+          <div class="capability-header">
+            <span class="capability-number">2</span>
+            <h2>Workshop Journey</h2>
+          </div>
+
+          <div class="capability-content">
+            <p>Follow this progressive journey through Bob's capabilities:</p>
+
+            <div class="demo-box">
+              <h3>Stage 0: Just Got the Project</h3>
+              <p>Start with a realistic scenario: You've been assigned to implement SSO + MFA across legacy systems to pass a SOC 2 audit. The deadline is tight, and you have a 20-page requirements document.</p>
+              <ul>
+                <li>Review the business requirements document</li>
+                <li>Understand the compliance requirements</li>
+                <li>Identify the affected systems</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>Stage 0.5: The Existing Codebase</h3>
+              <p>Explore the three legacy repositories you'll be working with:</p>
+              <ul>
+                <li><strong>auth-service</strong> (Node.js) - Authentication microservice</li>
+                <li><strong>user-service</strong> (Java) - User management system</li>
+                <li><strong>frontend</strong> (React) - Customer-facing application</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>Stages 1-8: Implementation Journey</h3>
+              <p>Work through each capability demonstration:</p>
+              <ol>
+                <li><strong>Business Requirements Analysis</strong> - Upload the PDF and let Bob extract technical requirements</li>
+                <li><strong>Compliance Mapping</strong> - Map SOC 2 findings to specific code changes</li>
+                <li><strong>Multi-Repo Planning</strong> - Generate implementation plan across all 3 repositories</li>
+                <li><strong>Code Generation</strong> - Watch Bob create 17+ files with proper integration</li>
+                <li><strong>Security Inline</strong> - See vulnerabilities caught and fixed in real-time</li>
+                <li><strong>Test Generation</strong> - Comprehensive test suites with 94% coverage</li>
+                <li><strong>Deployment Planning</strong> - Zero-downtime deployment runbook</li>
+                <li><strong>Compliance Evidence</strong> - Automated audit documentation</li>
+              </ol>
+            </div>
+
+            <div class="demo-box">
+              <h3>Stage 9: Bobalytics Dashboard</h3>
+              <p>Review the complete productivity and cost analysis:</p>
+              <ul>
+                <li>Task completion time: 10 minutes vs 7-8 weeks traditional</li>
+                <li>Total cost: $8.47 vs $192,000 traditional</li>
+                <li>Files generated: 17+ across 3 repositories</li>
+                <li>Test coverage: 94% production-ready</li>
+                <li>Security issues: 3 detected and fixed inline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expected Outcomes Section -->
+      <section id="outcomes" class="section section-alt">
+        <div class="container">
+          <div class="capability-header">
+            <span class="capability-number">3</span>
+            <h2>Expected Outcomes</h2>
+          </div>
+
+          <div class="capability-content">
+            <div class="objective-box">
+              <h3>Technical Deliverables</h3>
+              <p>By the end of the workshop, you'll have generated:</p>
+              <ul>
+                <li>Complete SSO + MFA implementation across 3 repositories</li>
+                <li>17+ production-ready code files with proper integration</li>
+                <li>Comprehensive test suites with 94% coverage</li>
+                <li>Zero-downtime deployment runbook</li>
+                <li>SOC 2 compliance evidence documentation</li>
+                <li>API contracts between services</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>Security Improvements</h3>
+              <ul>
+                <li>Hardcoded secrets replaced with environment variables</li>
+                <li>SQL injection vulnerabilities prevented</li>
+                <li>Proper authentication token handling</li>
+                <li>All security issues caught during generation, not after</li>
+              </ul>
+            </div>
+
+            <div class="comparison-table">
+              <h3>Time Comparison: Traditional vs Bob</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Phase</th>
+                    <th>Traditional Approach</th>
+                    <th>With Bob</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Requirements Analysis</td>
+                    <td>1 week</td>
+                    <td>30 seconds</td>
+                  </tr>
+                  <tr>
+                    <td>Compliance Mapping</td>
+                    <td>1 week</td>
+                    <td>1 minute</td>
+                  </tr>
+                  <tr>
+                    <td>Implementation Planning</td>
+                    <td>1 week</td>
+                    <td>2 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>Code Development</td>
+                    <td>3 weeks</td>
+                    <td>5 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>Security Review</td>
+                    <td>1 week + rework</td>
+                    <td>Real-time (inline)</td>
+                  </tr>
+                  <tr>
+                    <td>Deployment Planning</td>
+                    <td>1 week</td>
+                    <td>2 minutes</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>7-8 weeks</strong></td>
+                    <td><strong>~10 minutes</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Metrics Section -->
+      <section id="metrics" class="section">
+        <div class="container">
+          <div class="capability-header">
+            <span class="capability-number">4</span>
+            <h2>Success Metrics</h2>
+          </div>
+
+          <div class="capability-content">
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value">10 minutes</div>
+                <div class="metric-label">Task Duration</div>
+                <div class="metric-comparison">vs 7-8 weeks traditional</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value">$191,991.53</div>
+                <div class="metric-label">Cost Savings</div>
+                <div class="metric-comparison">per project</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value">94%</div>
+                <div class="metric-label">Test Coverage</div>
+                <div class="metric-comparison">production-ready</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Security Issues</div>
+                <div class="metric-comparison">detected & fixed inline</div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <h3>ROI Breakdown</h3>
+              <ul>
+                <li><strong>Traditional Cost:</strong> $192,000 (4 developers × 8 weeks × $6,000/week)</li>
+                <li><strong>Bob Cost:</strong> $8.47 (actual LLM costs from Bobalytics)</li>
+                <li><strong>Savings:</strong> $191,991.53 per project</li>
+                <li><strong>Productivity Multiplier:</strong> 672x faster</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Paths Section -->
+      <section id="learning" class="section section-alt">
+        <div class="container">
+          <div class="capability-header">
+            <span class="capability-number">5</span>
+            <h2>Learning Paths</h2>
+          </div>
+
+          <div class="capability-content">
+            <div class="demo-box">
+              <h3>For Individual Developers</h3>
+              <p>Focus on hands-on technical capabilities:</p>
+              <ul>
+                <li>Work through all 9 stages at your own pace</li>
+                <li>Experiment with different prompts and approaches</li>
+                <li>Explore the generated code and understand Bob's decisions</li>
+                <li>Try modifying requirements and see how Bob adapts</li>
+                <li>Review Bobalytics to understand cost and productivity metrics</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>For Team Leaders/Facilitators</h3>
+              <p>Run the workshop as a team exercise:</p>
+              <ul>
+                <li>Allocate 60-90 minutes for the full workshop</li>
+                <li>Have participants work in pairs or small groups</li>
+                <li>Pause at each stage to discuss observations and insights</li>
+                <li>Compare results across teams (different approaches, same outcome)</li>
+                <li>Conclude with a discussion on how to integrate Bob into your workflow</li>
+              </ul>
+            </div>
+
+            <div class="demo-box">
+              <h3>For Sales/Leadership</h3>
+              <p>Focus on business value and ROI:</p>
+              <ul>
+                <li>Review the README and Stage 9 (Bobalytics) first</li>
+                <li>Understand the time and cost comparisons</li>
+                <li>Note the compliance automation capabilities</li>
+                <li>Use the metrics for customer conversations</li>
+                <li>Reference the IBM internal success stories</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-box">
+            <h3>Ready to Start the Workshop?</h3>
+            <p>Access the complete Bob-a-thon workshop materials and begin your hands-on journey with IBM Bob.</p>
+            <div class="cta-buttons">
+              <a href="https://github.ibm.com/Subramaniam-J/seller_deep_dive" target="_blank" class="btn btn-primary">Start Workshop Now</a>
+              <a href="walkthrough.html" class="btn btn-secondary">View Capabilities</a>
+              <a href="narrative.html" class="btn btn-secondary">Seller Guide</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Need Support?</h3>
+            <p>Contact IBM Client Engineering for:</p>
+            <ul>
+              <li>Access to IBM Bob for the workshop</li>
+              <li>Facilitated workshop sessions for your team</li>
+              <li>Custom workshops tailored to your use cases</li>
+              <li>Pilot programs and proof-of-concept engagements</li>
+            </ul>
+            <a href="https://www.ibm.com/client-engineering" target="_blank" class="btn btn-secondary">Contact Client Engineering</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Shared Footer Component -->
+  <div data-component="footer"></div>
+
+  <!-- Scripts -->
+  <script src="components/component-loader.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for navigation links
+      const navLinks = document.querySelectorAll('.capability-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          // Remove active class from all links
+          navLinks.forEach(l => l.classList.remove('active'));
+          // Add active class to clicked link
+          this.classList.add('active');
+          
+          // Smooth scroll to section
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      // Update active link on scroll
+      const sections = document.querySelectorAll('.section');
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+</body>
+</html>
